@@ -13,6 +13,7 @@ about.onclick = function (e) {
       e.preventDefault();
       aboutText.style.display = "none";
       toggleAbout = false;
+      cap.classList.remove("deactive");
     };
   } else {
     aboutText.style.display = "none";
