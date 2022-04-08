@@ -2,19 +2,23 @@ let about = document.getElementById("about");
 let aboutText = document.getElementById("aboutText");
 let toggleAbout = false;
 let aboutClose = document.getElementById("aboutClose");
+let cap = document.querySelector("#cap");
 about.onclick = function (e) {
   e.preventDefault();
   if (toggleAbout == false) {
     aboutText.style.display = "block";
     toggleAbout = true;
+    cap.classList.add("deactive");
     aboutClose.onclick = function (e) {
       e.preventDefault();
       aboutText.style.display = "none";
       toggleAbout = false;
+      cap.classList.remove("deactive");
     };
   } else {
     aboutText.style.display = "none";
     toggleAbout = false;
+    cap.classList.remove("deactive");
   }
 };
 
@@ -62,10 +66,10 @@ let list = document.querySelector("#workList");
 let toggleWork = false;
 let caption = document.getElementById("cap");
 let captions = [
-  "cast aluminum, cast bondo, ceramic bushings, machined plexiglass",
-  "found car part, fan blade, electrical tape, found cable and wires",
+  "cast aluminum, cast bondo, ceramic bushings, machined&nbsp;plexiglass",
+  "found car part, fan blade, electrical tape, found cable and&nbsp;wires",
   "found sassafras branch, 9 speaker drivers, various adhesives, found wood and bark",
-  "cast aluminum, found plastic, cast bondo, ceramic bushings, found hardware, cable clamp, machined plexiglass",
+  "cast aluminum, found plastic, cast bondo, ceramic bushings, found hardware, cable clamp, machined&nbsp;plexiglass",
   "drift log with rusted steel inclusions, found wood, fiberglass, total boat epoxy resin, 18’ sunfish parts, rusted crankshaft (unknown origin), aluminum composite panel, dried citrus fruits, caltrops, barnacles, plant matter, hoses from abandoned building",
   "oak branch, neon tube, transformer, plant matter, various viscous substances",
   "pine, steel, various adhesives, wires, amplifier, speakers, modified AM radio static (10:02), MP3 player",
