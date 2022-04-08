@@ -1,17 +1,17 @@
 @font-face {
   font-family: Marr;
-  src: url(asset/MarrSansCond-Medium.ttf);
+  src: url(asset/RobotoCondensed-Regular.ttf);
 }
-@font-face {
+/* @font-face {
   font-family: MarrI;
   src: url(asset/MarrSansCond-MediumItalic.ttf);
-}
+} */
 
 * {
   margin: 0 auto;
   padding: 0;
   font-family: Marr;
-  letter-spacing: 0.5pt;
+  letter-spacing: 0;
   box-sizing: border-box;
 }
 
@@ -136,11 +136,11 @@ body {
 }
 #cap {
   position: absolute;
-  bottom: 3.5%;
+  bottom: 4%;
   left: 50%;
   transform: translateX(-50%);
   cursor: default;
   text-align: center;
-  max-width: 50%;
+  max-width: 45%;
   color: white;
 }
