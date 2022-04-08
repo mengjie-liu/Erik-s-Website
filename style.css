@@ -86,7 +86,7 @@ body {
 #work {
   left: 2.25%;
   top: 3.75%;
-  cursor: default;
+  /* cursor: default; */
 }
 
 #erikN {

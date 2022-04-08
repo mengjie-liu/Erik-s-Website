@@ -76,26 +76,26 @@ let captions = [
   "plastic basin, chain hoist, contact microphone, amplifier and effect pedal, crushed wheel from a car, dead birds, sediment, extension cords, found aluminum, gas can, noise",
 ];
 let startTime = [15, 50, 80, 150, 170, 350, 380, 410];
-// works.addEventListener(
-//   "click",
-//   function (e) {
-//     e.preventDefault();
-//     if (toggleWork == false) {
-//       list.style.display = "block";
-//       toggleWork = true;
-//     } else {
-//       list.style.display = "none";
-//       toggleWork = false;
-//     }
-//     // caption.innerHTML = "";
-//     // vd.play();
-//     // vd.pause();
-//     // vd.currentTime = 0;
-//     // vd.play();
-//     console.log(toggleWork);
-//   },
-//   false
-// );
+works.addEventListener(
+  "click",
+  function (e) {
+    e.preventDefault();
+    // if (toggleWork == false) {
+    //   list.style.display = "block";
+    //   toggleWork = true;
+    // } else {
+    //   list.style.display = "none";
+    //   toggleWork = false;
+    // }
+    caption.innerHTML = "";
+    vd.play();
+    vd.pause();
+    vd.currentTime = 0;
+    vd.play();
+    // console.log(toggleWork);
+  },
+  false
+);
 
 for (let i = 0; i < work.length; i++) {
   work[i].addEventListener(
