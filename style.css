@@ -42,7 +42,7 @@ body {
 .bigTitle {
   position: absolute;
   font-size: 3.6em;
-  filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.5));
   cursor: pointer;
   color: white;
 }
@@ -114,7 +114,7 @@ body {
   color: white !important;
 }
 .deactive {
-  color: rgba(255, 255, 255, 0.4) !important;
+  color: rgba(255, 255, 255, 0.35) !important;
 }
 #sp1,
 #sp2 {
@@ -139,7 +139,7 @@ body {
   position: relative;
   font-size: 2em;
   line-height: 110%;
-  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.5));
 }
 #cap {
   position: absolute;
