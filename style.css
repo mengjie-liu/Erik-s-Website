@@ -116,7 +116,7 @@ body {
 
 #workList {
   position: absolute;
-  display: none;
+  /* display: none; */
   left: 2.25%;
   top: 12.25%;
 }
