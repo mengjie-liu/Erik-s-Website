@@ -2,11 +2,13 @@ let about = document.getElementById("about");
 let aboutText = document.getElementById("aboutText");
 let toggleAbout = false;
 let aboutClose = document.getElementById("aboutClose");
+let cap = document.querySelector("#cap");
 about.onclick = function (e) {
   e.preventDefault();
   if (toggleAbout == false) {
     aboutText.style.display = "block";
     toggleAbout = true;
+    cap.classList.add("deactive");
     aboutClose.onclick = function (e) {
       e.preventDefault();
       aboutText.style.display = "none";
@@ -15,6 +17,7 @@ about.onclick = function (e) {
   } else {
     aboutText.style.display = "none";
     toggleAbout = false;
+    cap.classList.remove("deactive");
   }
 };
 
