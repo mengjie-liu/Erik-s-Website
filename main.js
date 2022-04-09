@@ -75,8 +75,8 @@ let captions = [
   "pine, steel, various adhesives, wires, amplifier, speakers, modified AM radio static (10:02), MP3 player",
   "plastic basin, chain hoist, contact microphone, amplifier and effect pedal, crushed wheel from a car, dead birds, sediment, extension cords, found aluminum, gas can, noise",
 ];
-let startTime = [16, 35, 58, 95, 117, 240, 280, 295];
-let finTime = [33, 54, 76, 115, 148, 271, 293, 319];
+let startTime = [16.2, 35.27, 58, 95, 116.5, 240, 280, 295];
+let finTime = [33, 53.5, 76, 115, 147.5, 270.5, 293, 318.5];
 
 works.addEventListener(
   "click",
@@ -116,7 +116,7 @@ let approxTime = 0;
 vd.ontimeupdate = function () {
   let curTime = vd.currentTime;
   if (curTime !== approxTime) {
-    approxTime = Math.floor(curTime);
+    approxTime = curTime;
     if (approxTime >= startTime[0] && approxTime < finTime[0]) {
       caption.innerHTML = captions[0];
       work.forEach(function (ele) {
