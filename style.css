@@ -20,6 +20,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
+  /* background-color: white */
 }
 
 /* a:hover {
@@ -48,6 +49,7 @@ body {
   filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.5));
   cursor: pointer;
   color: white;
+  /* color: black; */
 }
 #about {
   right: 2.25%;
@@ -67,6 +69,7 @@ body {
   transform: translate(-50%, -50%);
   cursor: default;
   color: white;
+  /* color: black; */
   z-index: 1000;
 }
 #aboutClose {
@@ -111,13 +114,18 @@ body {
 }
 
 .spds {
+  /* color: rgba(0, 0, 0, 0.35); */
+
   color: rgba(255, 255, 255, 0.35);
 }
 .active {
   color: white !important;
+  /* color: black !important; */
 }
 .deactive {
   color: rgba(255, 255, 255, 0.35) !important;
+  /* color: rgba(0, 0, 0, 0.35); */
+
 }
 #sp1,
 #sp2 {
@@ -136,13 +144,15 @@ body {
   float: left;
   clear: both;
   color: rgba(255, 255, 255, 0.35);
+  /* color: rgba(0, 0, 0, 0.35); */
+
 }
 
 .smallText {
   position: relative;
   font-size: 2em;
-  line-height: 110%;
-  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.5));
+  line-height: 105%;
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.55));
 }
 #cap {
   position: absolute;
@@ -153,4 +163,5 @@ body {
   text-align: center;
   max-width: 45%;
   color: white;
+  /* color: black; */
 }

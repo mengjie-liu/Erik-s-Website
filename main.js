@@ -75,7 +75,9 @@ let captions = [
   "pine, steel, various adhesives, wires, amplifier, speakers, modified AM radio static (10:02), MP3 player",
   "plastic basin, chain hoist, contact microphone, amplifier and effect pedal, crushed wheel from a car, dead birds, sediment, extension cords, found aluminum, gas can, noise",
 ];
-let startTime = [15, 50, 80, 150, 170, 350, 380, 410];
+let startTime = [16.2, 35.27, 58, 95, 116.5, 240, 280, 295];
+let finTime = [33, 53.5, 76, 115, 147.5, 270.5, 293, 318.5];
+
 works.addEventListener(
   "click",
   function (e) {
@@ -112,59 +114,65 @@ for (let i = 0; i < work.length; i++) {
 
 let approxTime = 0;
 vd.ontimeupdate = function () {
-  let curTime = Math.floor(vd.currentTime);
+  let curTime = vd.currentTime;
   if (curTime !== approxTime) {
     approxTime = curTime;
-    if (approxTime >= startTime[0] && approxTime < startTime[1]) {
+    if (approxTime >= startTime[0] && approxTime < finTime[0]) {
       caption.innerHTML = captions[0];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[0].classList.add("active");
-    } else if (approxTime >= startTime[1] && approxTime < startTime[2]) {
+    } else if (approxTime >= startTime[1] && approxTime < finTime[1]) {
       caption.innerHTML = captions[1];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[1].classList.add("active");
-    } else if (approxTime >= startTime[2] && approxTime < startTime[3]) {
+    } else if (approxTime >= startTime[2] && approxTime < finTime[2]) {
       caption.innerHTML = captions[2];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[2].classList.add("active");
-    } else if (approxTime >= startTime[3] && approxTime < startTime[4]) {
+    } else if (approxTime >= startTime[3] && approxTime < finTime[3]) {
       caption.innerHTML = captions[3];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[3].classList.add("active");
-    } else if (approxTime >= startTime[4] && approxTime < startTime[5]) {
+    } else if (
+      (approxTime >= startTime[4] && approxTime < finTime[4]) ||
+      (approxTime >= 167 && approxTime <= 222.5)
+    ) {
       caption.innerHTML = captions[4];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[4].classList.add("active");
-    } else if (approxTime >= startTime[5] && approxTime < startTime[6]) {
+    } else if (approxTime >= startTime[5] && approxTime < finTime[5]) {
       caption.innerHTML = captions[5];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[5].classList.add("active");
-    } else if (approxTime >= startTime[6] && approxTime < startTime[7]) {
+    } else if (approxTime >= startTime[6] && approxTime < finTime[6]) {
       caption.innerHTML = captions[6];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[6].classList.add("active");
-    } else if (approxTime >= startTime[7] && approxTime < 422) {
+    } else if (approxTime >= startTime[7] && approxTime < finTime[7]) {
       caption.innerHTML = captions[7];
       work.forEach(function (ele) {
         ele.classList.remove("active");
       });
       work[7].classList.add("active");
-    } else if (approxTime >= 422) {
+    } else {
       caption.innerHTML = "";
+      work.forEach(function (ele) {
+        ele.classList.remove("active");
+      });
     }
   }
 };
