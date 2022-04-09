@@ -11,7 +11,7 @@
   margin: 0 auto;
   padding: 0;
   font-family: RobotCond;
-  letter-spacing: 0;
+  letter-spacing: -0.05;
   box-sizing: border-box;
 }
 
@@ -152,7 +152,7 @@ body {
   position: relative;
   font-size: 2em;
   line-height: 105%;
-  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(0 0 0.15rem rgba(0, 0, 0, 0.55));
 }
 #cap {
   position: absolute;
