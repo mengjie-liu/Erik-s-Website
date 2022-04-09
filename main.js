@@ -90,7 +90,7 @@ works.addEventListener(
     //   toggleWork = false;
     // }
     caption.innerHTML = "";
-    vd.play();
+    // vd.play();
     vd.pause();
     vd.currentTime = 0;
     vd.play();
